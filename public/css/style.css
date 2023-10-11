@@ -1,0 +1,91 @@
+.car {
+  position: absolute;
+  bottom: 30px;
+  left: 100%;
+  width: 0px;
+  height: 96px;
+  background-size: cover;
+  background-image: url("/200w.webp");
+  animation-name: slide-in-right;
+  animation-duration: 7.2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+.background-car {
+  height: 300px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(29, 120, 253, 1) 77%, rgba(0, 0, 0, 1) 100%);
+  position: relative;
+}
+@keyframes slide-in-right {
+  0% {
+    width: 150px;
+    left: 100%;
+    opacity: 1;
+  }
+  5% {
+    /* left: 100%; */
+    opacity: 1;
+  }
+  10% {
+    width: 150px;
+    /* left: 70%; */
+    opacity: 1;
+  }
+  20% {
+    width: 150px;
+    /* left: 40%; */
+    opacity: 1;
+  }
+  27% {
+    left: 50%;
+    transform: rotateZ(0deg);
+  }
+  30% {
+    width: 150px;
+    left: 50%;
+    transform: rotateZ(-15deg);
+    opacity: 1;
+  }
+  35% {
+    transform: rotateZ(0deg);
+  }
+  40% {
+    transform: rotateZ(0deg);
+    opacity: 1;
+  }
+  50% {
+    left: 50%;
+    opacity: 1;
+  }
+  60% {
+    width: 150px;
+    left: 50%;
+    transform: rotateZ(0deg);
+    opacity: 1;
+  }
+  62% {
+    width: 150px;
+    transform: rotateZ(10deg);
+    opacity: 1;
+  }
+  70% {
+    width: 150px;
+    left: 0%;
+    transform: rotateZ(15deg);
+    opacity: 1;
+  }
+  80% {
+    width: 150px;
+    transform: rotateZ(0deg);
+    left: -50%;
+    opacity: 1;
+  }
+  100% {
+    width: 150px;
+    left: -100%;
+    opacity: 1;
+  }
+}
